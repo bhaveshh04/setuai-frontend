@@ -1,5 +1,5 @@
 import axios from "axios";
-const API = import.meta.env.VITE_API_URL || "http://localhost:8080";
+const API = import.meta.env.VITE_API_URL || "https://setuai-backend.onrender.com";
 
 export const sendMessage = (sessionId, message, subject) =>
   axios.post(`${API}/api/chat/send`, { sessionId, message, subject });

@@ -8,7 +8,7 @@ export default defineConfig({
     proxy: {
       // Any request starting with /api will be sent to Spring Boot
       '/api': {
-        target: 'http://localhost:8080', 
+        target: 'https://setuai-backend.onrender.com', 
         changeOrigin: true,
         secure: false,
       }

@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { AuthCtx } from "./AuthContext";
 
-const API = import.meta.env.VITE_API_URL || "http://localhost:8080";
+const API = import.meta.env.VITE_API_URL || "https://setuai-backend.onrender.com";
 
 function getInitialToken() {
   return localStorage.getItem("token") || null;
