@@ -3,7 +3,7 @@ import axios from "axios";
 import { AuthCtx } from "./AuthContext";
 
 // 🚨 Hardcoded absolute URL so it ALWAYS goes to Render
-const API = "https://setuai-backend.onrender.com";
+const API = "https://setuai-backend-7z3l.onrender.com";
 
 function getInitialToken() {
   return localStorage.getItem("token") || null;
