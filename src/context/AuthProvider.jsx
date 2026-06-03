@@ -2,7 +2,8 @@ import { useState } from "react";
 import axios from "axios";
 import { AuthCtx } from "./AuthContext";
 
-const API = import.meta.env.VITE_API_URL || "https://setuai-backend.onrender.com";
+// 🚨 Hardcoded absolute URL so it ALWAYS goes to Render
+const API = "https://setuai-backend.onrender.com";
 
 function getInitialToken() {
   return localStorage.getItem("token") || null;
